@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel VIP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Logotipo da Empresa">
+        <h1>Painel VIP</h1>
+    </header>
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#main-dashboard">Painel Principal</a></li>
+                <li><a href="#production">Produção</a></li>
+                <li><a href="#inventory">Inventário</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="content">
+        <section id="main-dashboard">
+            <h2>Painel Principal</h2>
+            <canvas id="dailyProductionChart"></canvas>
+            <canvas id="efficiencyComparisonChart"></canvas>
+            <table id="rawMaterialStockTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Quantidade em Estoque</th>
+                        <th>Quantidade Necessária</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados da tabela -->
+                </tbody>
+            </table>
+            <table id="currentProductionStatusTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Quantidade Produzida</th>
+                        <th>Meta de Produção</th>
+                        <th>% da Meta Atingida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados da tabela -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Informações sobre a empresa.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts3.js"></script>
+</body>
+</html>
